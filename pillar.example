@@ -1,0 +1,28 @@
+tls:
+  certs:
+    /etc/ssl/example1.crt:
+      content: |
+        -----BEGIN CERTIFICATE-----
+        ...
+        -----END CERTIFICATE-----
+    /etc/ssl/example2.crt:
+      content: |
+        -----BEGIN CERTIFICATE-----
+        ...
+        -----END CERTIFICATE-----
+      user: dovecot
+      group: dovecot
+  keys:
+    /etc/ssl/private/example1.key:
+      content: |
+        -----BEGIN PGP MESSAGE-----
+        ...
+        -----END PGP MESSAGE-----
+    /etc/ssl/private/.key:
+      content: |
+        -----BEGIN PGP MESSAGE-----
+        ...
+        -----END PGP MESSAGE-----
+      user: dovecot
+      group: dovecot
+      mode: 0400
